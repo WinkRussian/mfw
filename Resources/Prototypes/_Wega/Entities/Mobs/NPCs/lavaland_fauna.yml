@@ -88,6 +88,9 @@
     thresholds:
       0: Alive
       200: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      125: 0.75
   - type: MeleeWeapon
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
@@ -161,6 +164,9 @@
     thresholds:
       0: Alive
       400: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      250: 0.75
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.235
     baseSprintSpeed: 2.235
@@ -353,6 +359,9 @@
     thresholds:
       0: Alive
       200: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      125: 0.75
   - type: Butcherable
     spawned:
     - id: DiamondOre1
@@ -427,6 +436,9 @@
     thresholds:
       0: Alive
       170: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      95: 0.75
   - type: Butcherable
     spawned:
     - id: DiamondOre1
@@ -527,6 +539,9 @@
     thresholds:
       0: Alive
       220: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.75
   - type: Butcherable
     spawned:
     - id: UraniumOre1

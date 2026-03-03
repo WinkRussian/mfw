@@ -1,3 +1,4 @@
+using Content.Server.Lavaland.Mobs.Components;
 using Content.Server.NPC.HTN;
 using Content.Server.NPC.Systems;
 using Content.Shared.Achievements;
@@ -69,7 +70,7 @@ public sealed partial class MegafaunaSystem : EntitySystem
     private void HandleDeath(EntityUid uid, MobStateChangedEvent args)
     {
         _ambient.SetAmbience(uid, false);
-        if (args.Origin != null)
+        if (args.Origin != null && !HasComp<LegionBossComponent>(uid))
         {
             _achievement.QueueAchievement(args.Origin.Value, AchievementsEnum.FirstBoss);
         }

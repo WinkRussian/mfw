@@ -22,6 +22,7 @@ using Content.Shared.Lavaland.Artefacts.Components;
 using Content.Shared.Medical;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Speech.Muting;
 using Content.Shared.StatusEffectNew;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
@@ -143,7 +144,6 @@ public sealed class VoiceOfGodSystem : EntitySystem
     private static readonly ProtoId<DamageTypePrototype> BluntDamage = "Blunt";
 
     private static readonly EntProtoId ForceSleeping = "StatusEffectForcedSleeping";
-    private static readonly EntProtoId Muted = "Muted";
 
     private static readonly ProtoId<EmotePrototype> Deathgasp = "DefaultDeathgasp";
     private static readonly ProtoId<EmotePrototype> Salute = "Salute";
@@ -354,7 +354,14 @@ public sealed class VoiceOfGodSystem : EntitySystem
 
     private void ApplySilence(EntityUid target, float duration)
     {
-        _statusEffects.TryAddStatusEffectDuration(target, Muted, TimeSpan.FromSeconds(duration));
+        if (HasComp<MutedComponent>(target))
+            return;
+
+        EnsureComp<MutedComponent>(target);
+        Timer.Spawn(TimeSpan.FromSeconds(duration), () =>
+        {
+            RemComp<MutedComponent>(target);
+        });
     }
 
     private void ApplyWakeUp(EntityUid target)

@@ -287,6 +287,7 @@ public sealed partial class LegionSystem : EntitySystem
 
                 if (args.Killer != null)
                 {
+                    _achievement.QueueAchievement(args.Killer.Value, AchievementsEnum.FirstBoss);
                     _achievement.QueueAchievement(args.Killer.Value, AchievementsEnum.LegionBoss);
                 }
             }

@@ -12,7 +12,6 @@
   - type: Item
     sprite: Objects/Devices/gps.rsi
   - type: HandheldGPS
-    handheld: true # Corvax-Wega-Lavaland
   - type: PhysicalComposition
     materialComposition:
       Steel: 400

@@ -29,7 +29,6 @@ public sealed partial class BloodDrunkMinerDashAction : WorldTargetActionEvent
 // Hierophant
 public sealed partial class HierophantBlinkActionEvent : EntityTargetActionEvent
 {
-    [DataField] public EntProtoId BlinkEffect = "EffectHierophantBlink";
 }
 
 public sealed partial class HierophantCrossActionEvent : EntityTargetActionEvent

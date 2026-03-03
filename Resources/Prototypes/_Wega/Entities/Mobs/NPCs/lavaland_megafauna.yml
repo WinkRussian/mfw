@@ -96,6 +96,7 @@
       - BloodDrunkMinerGear
   - type: InputMover
   - type: MobMover
+  - type: LavaWalking
   - type: ScaleVisuals
     scale: 1.172, 1.172
   - type: MobThresholds
@@ -112,7 +113,6 @@
     suffocationThreshold: -6.0
     maxSaturation: 8.0
     minSaturation: -4.0
-    suffocationCycleThreshold: 6
     updateIntervalMultiplier: 0.8
   - type: BloodDrunkMiner
   - type: NPCHandSwitcher
@@ -207,7 +207,6 @@
     radius: 2.5
     energy: 2.5
   - type: Megafauna
-    isActive: false
     bossMusic:
       path: "/Audio/_Wega/Mobs/Lavaland/hiero_bgm.ogg"
   - type: HierophantBoss
@@ -557,7 +556,7 @@
       path: /Audio/Effects/bite.ogg
     attackRate: 0.25
     damage:
-     type:
+     types:
        Slash: 40
   - type: RechargeBasicEntityAmmo
     showExamineText: false
@@ -670,7 +669,7 @@
       path: /Audio/Effects/bite.ogg
     attackRate: 1
     damage:
-     type:
+     types:
        Slash: 10
   - type: RechargeBasicEntityAmmo
     showExamineText: false

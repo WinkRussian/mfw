@@ -51,7 +51,6 @@
     suffocationThreshold: -6.0
     maxSaturation: 8.0
     minSaturation: -4.0
-    suffocationCycleThreshold: 6
     updateIntervalMultiplier: 0.8
   - type: NpcFactionMember
     factions:
