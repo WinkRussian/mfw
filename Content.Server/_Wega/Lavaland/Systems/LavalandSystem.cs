@@ -652,7 +652,7 @@ public sealed partial class LavalandSystem : SharedLavalandSystem
 
     private void OnStationStartup(Entity<StationLavalandComponent> ent, ref StationPostInitEvent args)
     {
-        if (!_cfg.GetCVar(WegaCVars.LavalandEnabled))
+        if (!_cfg.GetCVar(WegaCVars.LavalandEnabled) || !ent.Comp.Enabled)
         {
             Log.Info("Lavaland processing is currently disabled.");
             return;
