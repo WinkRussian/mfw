@@ -49,6 +49,13 @@ namespace Content.Shared.Humanoid.Markings
 
         [DataField("sprites", required: true)]
         public List<SpriteSpecifier> Sprites { get; private set; } = default!;
+        
+        /// Impstation start
+        [DataField]
+
+        public string? Shader { get; private set; } = null;
+        /// Impstation end
+
 
         public Marking AsMarking()
         {

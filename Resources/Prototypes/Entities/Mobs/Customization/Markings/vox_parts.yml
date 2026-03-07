@@ -188,16 +188,17 @@
   sprites:
   - sprite: Mobs/Customization/vox_parts.rsi
     state: tail
-
-- type: marking
-  id: VoxTailShort
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vox]
-  forcedColoring: true
-  sprites:
-  - sprite: Mobs/Customization/vox_parts.rsi
-    state: tail_short
+    
+# impstation markings port
+# - type: marking
+#   id: VoxTailShort
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vox]
+#   forcedColoring: true
+#   sprites:
+#   - sprite: Mobs/Customization/vox_parts.rsi
+#     state: tail_short
 
 - type: marking
   id: VoxTailBig
@@ -229,12 +230,13 @@
   - sprite: Mobs/Customization/vox_parts.rsi
     state: tail_docked
 
-- type: marking
-  id: VoxTailSplit
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vox]
-  forcedColoring: true
-  sprites:
-  - sprite: Mobs/Customization/vox_parts.rsi
-    state: tail_split
+# impstation markings port
+# - type: marking
+#   id: VoxTailSplit2
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vox]
+#   forcedColoring: true
+#   sprites:
+#   - sprite: Mobs/Customization/vox_parts.rsi
+#    state: tail_split

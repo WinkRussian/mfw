@@ -54,10 +54,10 @@
       required: true
       defaultMarkings: [ LizardSnoutRound ]
     HeadTop:
-      points: 2
+      points: 3
       required: false
     HeadSide:
-      points: 2 # Corvax-Wega-Edit
+      points: 6 # Impstation markings port
       required: false
     UndergarmentTop:
       points: 1
@@ -66,13 +66,13 @@
       points: 1
       required: false
     Chest:
-      points: 3
+      points: 8
       required: false
     Legs:
-      points: 2
+      points: 8
       required: false
     Arms:
-      points: 2
+      points: 8
       required: false
 
 - type: humanoidBaseSprite
